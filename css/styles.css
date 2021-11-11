@@ -1,0 +1,218 @@
+/* Style of the body of the page */
+body {
+    background-color:#ffffff;
+    width: 100%;
+    margin: 0;
+}
+
+/* --------------------- NAV BAR STYLES ----------------------- */
+
+/* Style of the nav bar */
+nav {
+    width: 100%;
+    background-color: #e9dfd6;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flow-root; /* credit for use of this value: https://css-tricks.com/clearfix-a-lesson-in-web-development-evolution/ */
+}
+
+/* Style of the logo */
+.logo_image {
+    float:left;
+    width: 120px; 
+    height:120px;
+}
+
+
+/* Style of the navigation links */
+.nav_links {
+    float: right;
+    color: #5a665f;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-weight: 500;
+    font-size:1.1em;
+    line-height: 1.5em;
+    padding: 20px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav_links:hover {
+    color:#5a665f;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+}
+
+
+/* --------------------- HEADING STYLES ----------------------- */
+
+/* Design of h1 */
+h1 {
+    clear: both;
+    color: #5a665f;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Design of h2 */
+h2 {
+    color: #ccb1a2;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 2.4em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Design of h3 */
+h3 {
+    color: #5f2e21;
+    font-family:  "Alegreya Sans", Helvetica, Arial, "san serif";
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --------------------- SECTION STYLES ----------------------- */
+
+/* Style of sections that are intended to take up a single column */
+.single_column_section {
+    margin: auto;
+    text-align: center;
+}
+
+/* Style paragraphs in the intro blurb */
+.single_column_section p {
+    margin: 1.4em auto;
+}
+
+
+
+/* --------------------- IMAGE STYLES + IFRAME ----------------------- */
+
+/* Styling for hero/banner images */
+.hero_image {
+    width: 100%;
+}
+
+iframe {
+    display: inline-block;
+}
+/* Style of the iframes used to display videos */
+.iframe {
+    display: inline;
+    width: 45%;
+    padding: 15px;
+}
+
+
+/* --------------------- NON-HAV HYPERLINK + BUTTON STYLES ----------------------- */
+
+/* Style of hyperlinks (non-navigation links) */
+a {
+    color:#f17f6a;
+    text-decoration: none;
+}
+
+/* Style when a hyperlink (non-navigation links) is hovered over */
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style of buttons */
+button {
+    color:#f17f6a;
+    background-color: #ffffff;
+    border-color: #f17f6a;
+    border-style: solid;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-size: 0.85em;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Style of buttons when hovered over */
+button:hover {
+    color: #ffffff;
+    background-color: #f17f6a;
+}
+
+/* --------------------- PARAGRAPH + LIST ----------------------- */
+
+/* Styling of paragraphs of text */
+p {
+    width: 70%;
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+/* Styling for unordered lists */
+ul {
+    text-align: left;
+}
+
+
+
+/* ---------------------- CARD STYLES ------------------------ */
+
+
+/* Style of the print cards themselves */
+.print_card {
+    display: inline-block;
+    width: 22%;
+    padding: 15px;
+}
+
+/* Style the images in the print cards */
+.print_card img {
+    width: 100%;
+}
+
+/* Style of paragraph of text on the shop cards */
+.price_p {
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+/* --------------------- FOOTER STYLES ----------------------- */
+
+/* Design of the footer */
+footer {
+    background-color: #dfddd5;
+}
+
+/* Design of paragraphs of text in the footer */
+footer p {
+    color: #464b46;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+
+.single_column_section h2 {
+    min-height: 400px;
+    max-height: 600px;
+    padding-top: 340px;
+    background-image: url("../multimedia/milky-way-near-Telluride.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

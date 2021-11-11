@@ -8,6 +8,10 @@
     <meta name="description" content="This is where you can see Sheena's landscape 
     prints that are for sale.">
     <title>Sheena's Print Shop</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- Use of Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;700;900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900">
 </head>
 
 
@@ -20,7 +24,7 @@
         <nav>
             <!-- website logo that navigates back to the home page when clicked -->
             <a href="index.html"><img src="multimedia/sheena-shahangian-logo.png" 
-                alt="logo for Sheena's portfolio site" width="180" height="180"></a>
+                alt="logo for Sheena's portfolio site" class="logo_image"></a>
 
             <!-- non-homepage/non-logo navigation links -->
             <a class="nav_links" href="biography.html">Biography</a>
@@ -35,7 +39,7 @@
     <main>
 
         <!-- this section introduces the print shop -->
-        <section class="introduction_block">
+        <section class="single_column_section">
 
             <h1>Welcome to the Print Shop</h1>
             <p>
@@ -56,133 +60,129 @@
 
         <!-- this section contains a banner/hero image and all the prints that can be purchased.  
         The prints are to be on hyperlinked "cards" that are within self-contained <article> tags -->
-        <section id="shop_section">
+        <section class="single_column_section">
 
             <!-- landscape banner/hero image for this section -->
             <img src="multimedia/milky-way-near-Telluride.jpg" 
-            alt="roadside view of the Milky Way" width="1500">
+            alt="roadside view of the Milky Way" class="hero_image">
 
-            <h2>Sneak a Peek at Some of My Favorite Prints</h2>
-            <p>
-                Below, you'll find a curated collection of my favorite landscape prints. Each of them can 
-                be purchased in a high quality walnut wood frame. These are heirloom quality prints that can 
-                be passed down from generation to generation. My intent is that these images inspire you to get 
-                out and explore the great outdoors yourself. Each of these places brought me an excitement and 
-                contentment that only nature can.
-            </p>
+            <!-- section introducing the print shop -->
+            <section class="section_intro_blurb">
+                <h2>Sneak a Peek at Some of My Favorite Prints</h2>
+                <p>
+                    Below, you'll find a curated collection of my favorite landscape prints. Each of them can 
+                    be purchased in a high quality walnut wood frame. These are heirloom quality prints that can 
+                    be passed down from generation to generation. My intent is that these images inspire you to get 
+                    out and explore the great outdoors yourself. Each of these places brought me an excitement and 
+                    contentment that only nature can.
+                </p>
+            </section>
 
             <!-- a self-contained card that holds the name of the print, an image of the print, 
-            and a price. The article element itself is click-able and redirects to my external gallery 
+            and a price. The image and button are both click-able and redirect to my external gallery 
             system which processes my payments and orders. -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2311cc7021a907c171e" target="_blank">
-                <article class="print_card">
-                    <h3>Half Dome at Sunrise</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Half-Dome.jpg" 
-                    alt="Half Dome in the morning light" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
+            <article class="print_card">
+                <h3>Half Dome</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2311cc7021a907c171e" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Half-Dome.jpg" 
+                alt="Half Dome in the morning light"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
                     
     
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef382f9a687ba0d800aa8ca" target="_blank">
-                <article class="print_card">
-                    <h3>Yosemite</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Yosemite.jpg" 
-                    alt="sunrise in Yosemite" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Yosemite</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef382f9a687ba0d800aa8ca" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Yosemite.jpg" 
+                alt="sunrise in Yosemite"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
     
     
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a71e1cc7020e9c60e67d" target="_blank">
-                <article class="print_card">
-                    <h3>Moab</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Moab.jpg" 
-                    alt="pink sky and canyon in Moab" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Moab</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a71e1cc7020e9c60e67d" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Moab.jpg" 
+                alt="pink sky and canyon in Moab"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
+
+
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Rainier</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2e91cc7021a907c1756" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Mt-Rainier.jpg" 
+                alt="snow-capped Mt Rainier with alpenglow"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
+
     
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Utah Desert</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a9521cc7021a907c14dc" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Capitol-Reef.jpg" 
+                alt="dusty orange Utah desert road at sunrise"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
     
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2e91cc7021a907c1756" target="_blank">
-                <article class="print_card">
-                    <h3>Mount Rainier</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Mt-Rainier.jpg" 
-                    alt="snow-capped Mt Rainier with alpenglow" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
+
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Snowy Alpine</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef37c9237dfb2110c9a2667" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-snowy-mountains.jpg" 
+                alt="snow covered mountains"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
+
+
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Aqua Lake</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a6b41cc70217a89e83cb" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Rocky-Mountain-lake.jpg" 
+                alt="aqua color lake in the Rockies"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
     
-    
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a9521cc7021a907c14dc" target="_blank">
-                <article class="print_card">
-                    <h3>Utah Desert</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Capitol-Reef.jpg" 
-                    alt="dusty orange Utah desert road at sunrise" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
-    
-    
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef37c9237dfb2110c9a2667" target="_blank">
-                <article class="print_card">
-                    <h3>Snowy Alpine</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-snowy-mountains.jpg" 
-                    alt="snow covered mountains" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
-    
-    
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a6b41cc70217a89e83cb" target="_blank">
-                <article class="print_card">
-                    <h3>Aqua Lake</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Rocky-Mountain-lake.jpg" 
-                    alt="aqua color lake in the Rockies" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
-    
-    
-            <!-- another self-contained hyperlinked card -->
-            <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef3826fa687ba050c08db9d" target="_blank">
-                <article class="print_card">
-                    <h3>Telluride</h3> <!-- print product name -->
-                    <!-- product image -->
-                    <img src="multimedia/framed-art-for-sale-Telluride.jpg" 
-                    alt="San Juan Mountains at golden hour" width="400">
-                    <p>Price: &#36;247.95</p> <!-- product price -->
-                </article>
-            </a>
-            <!-- button to shop the print -->
-            <button type="button">Shop the Print</button>
+
+            <!-- another self-contained card -->
+            <article class="print_card">
+                <h3>Telluride</h3> <!-- print product name -->
+                <!-- product image -->
+                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef3826fa687ba050c08db9d" 
+                target="_blank"><img src="multimedia/framed-art-for-sale-Telluride.jpg" 
+                alt="San Juan Mountains at golden hour"></a>
+                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <!-- button to shop the print -->
+                <button type="button">Shop the Print</button>
+            </article>
+
 
         </section>
 

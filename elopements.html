@@ -8,6 +8,10 @@
     <meta name="description" content="This is a page reviewing Sheena's elopement photography work, 
     and provides insight into her client experience.">
     <title>Sheena's Elopement Photography</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- Use of Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;700;900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900">
 </head>
 
 
@@ -20,7 +24,7 @@
         <nav>
             <!-- website logo that navigates back to the home page when clicked -->
             <a href="index.html"><img src="multimedia/sheena-shahangian-logo.png" 
-                alt="logo for Sheena's portfolio site" width="180" height="180"></a>
+                alt="logo for Sheena's portfolio site" class="logo_image"></a>
 
             <!-- non-homepage/non-logo navigation links -->
             <a class="nav_links" href="biography.html">Biography</a>
@@ -35,7 +39,7 @@
     <main>
 
         <!-- this section introduces the print shop -->
-        <section class="introduction_block">
+        <section class="single_column_section">
 
             <h1>All About My Day Job - Documenting Elopements</h1>
             <p>
@@ -89,19 +93,22 @@
 
             <!-- landscape banner/hero image for this section -->
             <img src="multimedia/aspen-elopement-at-sunrise.jpg" alt="a couple eloping at sunrise in Aspen"
-                width="1500">
+            class="hero_image">
 
-            <h2>Curious What an Elopement Day Looks Like?</h2>
-            <p>
-                Adventurous elopements are a strange concept to most people, but they're some of the most
-                incredible types of weddings, if you ask me! At their core, my couples want their elopements to
-                be a true representation of their relationship and the things they love to do together. As I tend
-                to work with very outdoorsy couples, a component of adventure is ever-present on these elopement
-                days. My couples turn their wedding day into a full day of exploration and adventure, and when
-                they look back on the photos of their day, that's exactly what they get: that moment frozen in time
-                forever. As they say, a picture is worth a thousand words (cheesy, I know!), so here are some
-                photos of some of my couples, so you can get a feel for what it is that I do.
-            </p>
+            <section class="single_column_section">
+                <h2>Curious What an Elopement Day Looks Like?</h2>
+                <p>
+                    Adventurous elopements are a strange concept to most people, but they're some of the most
+                    incredible types of weddings, if you ask me! At their core, my couples want their elopements to
+                    be a true representation of their relationship and the things they love to do together. As I tend
+                    to work with very outdoorsy couples, a component of adventure is ever-present on these elopement
+                    days. My couples turn their wedding day into a full day of exploration and adventure, and when
+                    they look back on the photos of their day, that's exactly what they get: that moment frozen in time
+                    forever. As they say, a picture is worth a thousand words (cheesy, I know!), so here are some
+                    photos of some of my couples, so you can get a feel for what it is that I do.
+                </p>
+            </section>
+
 
             <!-- miniature collection of images of elopements -->
             <img src="multimedia/keystone-elopement-at-sunrise.jpg" 
@@ -115,11 +122,11 @@
 
 
         <!-- this section contains a banner image and an example of an elopement day timeline. -->
-        <section id="timeline_section">
+        <section class="single_column_section">
             <h2>Still Can't Picture It?</h2>
             <h3>Here's an Example of an Elopement Day Timeline</h3>
             <img src="multimedia/buena-vista-elopement-at-sunrise.jpg" 
-            alt="elopement ceremony in the mountains at sunrise" width="1500">
+            alt="elopement ceremony in the mountains at sunrise" class="hero_image">
             <p>
                 One of the things most couples struggle with at the start of elopement planning is 
                 understanding how all the pieces fit together to create a full day, adventurous 
