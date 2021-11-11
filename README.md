@@ -19,6 +19,11 @@ The repository is public, however should you have any trouble accessing it, plea
 I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 
 
 * using Google Fonts rather than system fonts to give my website an elevated and customized look (while still ensuring fallback fonts are chosen)
+
 * having more than one property:value pair on nearly every selector I've used
+
 * organizing my css document with comments to ensure the design choices are clear and easy to find (which will make this website easier to modify in the future)
+
 * creating a color palette that I have based my styles on to ensure consistency in brand
+
+  

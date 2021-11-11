@@ -30,9 +30,9 @@ nav {
     color: #5a665f;
     font-family: Poppins, Helvetica, Arial, "san serif";
     font-weight: 500;
-    font-size:1.1em;
-    line-height: 1.5em;
-    padding: 20px;
+    font-size:1.1rem;
+    line-height: 1.5rem;
+    padding: 1.5rem;
     text-align:center;
     text-transform: uppercase;
     text-decoration: none;
@@ -41,7 +41,7 @@ nav {
 .nav_links:hover {
     color:#5a665f;
     text-decoration: underline;
-    text-decoration-thickness: 0.2em;
+    text-decoration-thickness: 0.2rem;
 }
 
 
@@ -49,12 +49,11 @@ nav {
 
 /* Design of h1 */
 h1 {
-    clear: both;
     color: #5a665f;
     font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
     font-weight: 700;
-    font-size: 3em;
-    line-height: 1.4em;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -63,9 +62,9 @@ h1 {
 h2 {
     color: #ccb1a2;
     font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 2.4em;
+    line-height: 2.4rem;
     text-transform: capitalize;
     text-align: center;
 }
@@ -74,10 +73,10 @@ h2 {
 h3 {
     color: #5f2e21;
     font-family:  "Alegreya Sans", Helvetica, Arial, "san serif";
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 300;
-    line-height: 1.7em;
-    letter-spacing: 0.2em;
+    line-height: 1.7rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -92,7 +91,7 @@ h3 {
 
 /* Style paragraphs in the intro blurb */
 .single_column_section p {
-    margin: 1.4em auto;
+    margin: 1.4rem auto;
 }
 
 
@@ -136,9 +135,9 @@ button {
     border-color: #f17f6a;
     border-style: solid;
     font-family: Poppins, Helvetica, Arial, "san serif";
-    font-size: 0.85em;
+    font-size: 0.85rem;
     margin: 1em auto;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -154,12 +153,12 @@ button:hover {
 
 /* Styling of paragraphs of text */
 p {
-    width: 70%;
+    width: 80%;
     color: #686960;
     font-family: Poppins, Helvetica, Arial, "san serif";
     font-weight: 300;
-    font-size: 1em;
-    line-height: 1.7em;
+    font-size: 1rem;
+    line-height: 1.7rem;
 }
 
 /* Styling for unordered lists */
@@ -186,7 +185,7 @@ ul {
 
 /* Style of paragraph of text on the shop cards */
 .price_p {
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -216,3 +215,78 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
+/* ---------------------- TABLET MEDIA QUERIES ------------------------- */
+/* These are media queries for screens of 640 pixels or less. */
+
+/* Resize h1 to be smaller and lighter in weight than desktop. */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    /* Resize h1 to be smaller and lighter in weight than desktop. */
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight:500;
+    }
+
+    /* Resize h2 to be smaller (with modified line height) than desktop. */
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    /* Resize h3 to be smaller (with modified line height than desktop. */
+    h3 {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+    }
+
+    /* Resize p to be left aligned and smaller than desktop. */
+    p {
+        font-size:0.95rem;
+        text-align: left;
+    }
+
+    /* Style the print cards so that there are less cards on each row on tablet. */
+    .print_card {
+        width: 40%;
+    }
+}
+
+
+/* ---------------------- MOBILE MEDIA QUERIES ------------------------- */
+/* These are for media queries for screens between 641 pixels and 1024 pixels. */
+
+
+@media screen and (max-width: 640px) {
+    /* Resize h1 to be smaller and lighter in weight than desktop. */
+    h1 {
+      font-size: 2.5rem;
+      line-height: 2.6rem;
+      font-weight:500;
+    }
+
+    /* Resize h2 to be smaller (with modified line height than desktop. */
+    h2 {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+    }
+
+    /* Resize h3 to be smaller (with modified line height than desktop. */
+    h3 {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+
+    /* Resize p to be left aligned and smaller than desktop. */
+    p {
+        font-size:0.9rem;
+        text-align: left;
+    }
+
+    /* Style the print cards so that there are less cards on each row on tablet. */
+    .print_card {
+        width: 80%;
+    }
+}
+
