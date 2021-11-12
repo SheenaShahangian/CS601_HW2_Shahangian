@@ -9,7 +9,7 @@ body {
 
 /* Style of the nav bar */
 nav {
-    width: 100%;
+    width: 100%; /* take full width of container */
     background-color: #e9dfd6;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -18,7 +18,7 @@ nav {
 
 /* Style of the logo, which will be on the left side of the screen */
 .logo_image {
-    float: left;
+    float: left; /* logo in top left corner of window */
     width: 120px; 
     height:120px;
 }
@@ -42,11 +42,14 @@ nav {
 .nav_links:hover {
     color:#5a665f;
     text-decoration: underline;
-    text-decoration-thickness: 0.2rem;
+    text-decoration-thickness: 0.2rem; /* chunky underline */
 }
 
 
 /* --------------------- HEADING STYLES ----------------------- */
+
+/* NOTE ABOUT PADDING: all padding is 1rem for headings + p to ensure 
+consistent margins when resizing for mobile */
 
 /* Style of h1 */
 h1 {
@@ -110,8 +113,8 @@ blockquote p {
     line-height: 1.7rem;
     text-transform: uppercase;
     text-align: center;
-    margin:0 auto;
-    width: 50%;
+    margin:0 auto; /* center blockquote text in its container */
+    width: 50%; /* reduces possible text width for a chunkier look */
 }
 
 
@@ -121,18 +124,149 @@ blockquote p {
 blockquote {
     background-image: url("../multimedia/independence-pass.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: fixed; /* used to create dynamic look */
     background-position: 50% 50%;
     padding: 150px 0px;
-    margin:0 auto;
+    margin:0 auto; /* ensures no white space on sides */
 }
+
+
+/* --------------------- NON-HAV HYPERLINK + BUTTON STYLES ----------------------- */
+
+/* Style of hyperlinks (non-navigation links) */
+a {
+    color:#f17f6a;
+    text-decoration: none;
+}
+
+
+/* Style when a hyperlink (non-navigation links) is hovered over */
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+
+/* Style of buttons */
+button {
+    color:#f17f6a;
+    background-color: #ffffff;
+    border-color: #f17f6a;
+    border-style: solid;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-size: 0.85rem;
+    margin: 1em auto;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Style of buttons when hovered over */
+button:hover {
+    color: #ffffff;
+    background-color: #f17f6a;
+}
+
+
+/* --------------------- LIST STYLES ----------------------- */
+
+
+/* Styling for unordered lists */
+ul {
+    text-align: left;
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: auto;
+    width: 50%;
+}
+
+
+/* --------------------- TABLE STYLES ----------------------- */
+
+/* Styles for table itself */
+table {
+    width: 80%; /* retain consistent width with p */
+    padding: 1rem; /* retain consistent padding with p */
+    margin: 0 auto; /* center table */
+}
+
+/* Set padding and text alignment for all cells, wether th or td */
+th, td {
+    padding: 0.9rem;
+    text-align: left;
+}
+
+/* Set styles for th */
+th {
+    color: #686960;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+/* Set styles for td */
+td {
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* Set different background color for odd rows */
+tr.odd {
+    background-color: #f8f4f1;
+}
+
+
+/* --------------------- IMAGE STYLES + IFRAME ----------------------- */
+
+
+/* Styling for hero/banner images */
+.hero_image {
+    width: 100%;
+}
+
+/* Style of the iframes used to display videos */
+iframe {
+    border: none;
+    height: 315px; /* height recommended by YouTube */
+    width: 100%;
+}
+
+/* Style of figures */
+figure {
+    margin: 1.4rem auto; /* center figure */
+    width: 80%; /* take up portion of single column */
+    padding: 1rem;
+}
+
+
+/* Style of figcaptions */
+figcaption {
+    color: #686960;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+
 
 /* --------------------- SECTION STYLES ----------------------- */
 
 /* Style of sections that are intended to take up a single column */
 .single_column_section {
     margin: auto;
+    padding-bottom: 2rem;
     text-align: center;
     display: flow-root;
 }
@@ -174,84 +308,6 @@ blockquote {
     align-items: center;
     width: 50%;
 }
-
-
-
-/* --------------------- IMAGE STYLES + IFRAME ----------------------- */
-
-
-/* Styling for hero/banner images */
-.hero_image {
-    width: 100%;
-}
-
-iframe {
-    display: inline-block;
-}
-/* Style of the iframes used to display videos */
-.iframe {
-    display: inline;
-    width: 45%;
-    padding: 15px;
-}
-
-
-/* --------------------- NON-HAV HYPERLINK + BUTTON STYLES ----------------------- */
-
-/* Style of hyperlinks (non-navigation links) */
-a {
-    color:#f17f6a;
-    text-decoration: none;
-}
-
-
-/* Style when a hyperlink (non-navigation links) is hovered over */
-a:hover {
-    text-decoration: underline;
-}
-
-
-/* Style of buttons */
-button {
-    color:#f17f6a;
-    background-color: #ffffff;
-    border-color: #f17f6a;
-    border-style: solid;
-    font-family: Poppins, Helvetica, Arial, "san serif";
-    font-size: 0.85rem;
-    margin: 1em auto;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-/* Style of buttons when hovered over */
-button:hover {
-    color: #ffffff;
-    background-color: #f17f6a;
-}
-
-
-/* --------------------- LIST STYLES ----------------------- */
-
-
-/* Styling for unordered lists */
-ul {
-    text-align: left;
-    color: #686960;
-    font-family: Poppins, Helvetica, Arial, "san serif";
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.7rem;
-    margin: auto;
-    width: 80%;
-}
-
-
-
-
-/* --------------------- TABLE STYLES ----------------------- */
 
 
 
@@ -390,7 +446,7 @@ footer p {
         margin-right: 30px;
     }
 
-    /* Resize h2 to be smaller (with modified line height than desktop. */
+    /* Resize h2 to be smaller, left-aligned, and lighter in weight than desktop. */
     h2 {
         font-size: 1.3rem;
         line-height: 1.4rem;
@@ -399,10 +455,18 @@ footer p {
         margin-right: 30px;
     }
 
-    /* Resize h3 to be smaller (with modified line height than desktop. */
+    /* Resize h3 to be smaller, left-aligned, and lighter in weight than desktop. */
     h3 {
         font-size: 1.1rem;
         line-height: 1.2rem;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    /* Keep h3 for the image gallery cards centered when on mobile */
+    .image_gallery_card h3 {
+        text-align: center;
     }
 
 
