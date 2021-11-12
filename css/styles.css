@@ -1,4 +1,4 @@
-/* Style of the body of the page */
+/* Style of the body of the page, which should be white and take up the browser window */
 body {
     background-color:#ffffff;
     width: 100%;
@@ -16,9 +16,9 @@ nav {
     display: flow-root; /* credit for use of this value: https://css-tricks.com/clearfix-a-lesson-in-web-development-evolution/ */
 }
 
-/* Style of the logo */
+/* Style of the logo, which will be on the left side of the screen */
 .logo_image {
-    float:left;
+    float: left;
     width: 120px; 
     height:120px;
 }
@@ -26,18 +26,19 @@ nav {
 
 /* Style of the navigation links */
 .nav_links {
-    float: right;
+    float: right; /* nav links sit to the right */
     color: #5a665f;
     font-family: Poppins, Helvetica, Arial, "san serif";
     font-weight: 500;
     font-size:1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     padding: 1.5rem;
     text-align:center;
     text-transform: uppercase;
     text-decoration: none;
 }
 
+/* Style when navigation links are hovered over */
 .nav_links:hover {
     color:#5a665f;
     text-decoration: underline;
@@ -47,7 +48,7 @@ nav {
 
 /* --------------------- HEADING STYLES ----------------------- */
 
-/* Design of h1 */
+/* Style of h1 */
 h1 {
     color: #5a665f;
     font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
@@ -56,9 +57,11 @@ h1 {
     line-height: 3.5rem;
     text-transform: uppercase;
     text-align: center;
+    margin: 3rem 2rem 1rem 2rem;
+    padding: 1rem;
 }
 
-/* Design of h2 */
+/* Style of h2 */
 h2 {
     color: #ccb1a2;
     font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
@@ -67,9 +70,11 @@ h2 {
     line-height: 2.4rem;
     text-transform: capitalize;
     text-align: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
 }
 
-/* Design of h3 */
+/* Style of h3 */
 h3 {
     color: #5f2e21;
     font-family:  "Alegreya Sans", Helvetica, Arial, "san serif";
@@ -79,6 +84,40 @@ h3 {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     text-align: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
+}
+
+
+/* --------------------- PARAGRAPH STYLES ----------------------- */
+
+/* Styling of paragraphs of text */
+p {
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding: 1rem;
+}
+
+/* Style of paragraphs of text in the info cards. */
+.info_card_paragraph {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* --------------------- BLOCKQUOTE + ASIDE STYLES ------------------------ */
+.pullquote {
+    color:#ffffff;
+    background-color: #f17f6a;
+    float: right;
+    text-align: right;
+    min-width: 200px;
+    max-width: 30%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
 }
 
 /* --------------------- SECTION STYLES ----------------------- */
@@ -87,11 +126,30 @@ h3 {
 .single_column_section {
     margin: auto;
     text-align: center;
+    display: flow-root;
 }
 
-/* Style paragraphs in the intro blurb */
+/* Style paragraphs in the intro blurb so they are centered */
 .single_column_section p {
     margin: 1.4rem auto;
+    width: 80%;
+}
+
+/* Using flexbox to create two column layout */
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Style for single column in the two column layout. */
+.flex_container .info_card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
 }
 
 
@@ -122,6 +180,7 @@ a {
     text-decoration: none;
 }
 
+
 /* Style when a hyperlink (non-navigation links) is hovered over */
 a:hover {
     text-decoration: underline;
@@ -149,22 +208,24 @@ button:hover {
     background-color: #f17f6a;
 }
 
-/* --------------------- PARAGRAPH + LIST ----------------------- */
 
-/* Styling of paragraphs of text */
-p {
-    width: 80%;
+/* --------------------- LIST STYLES ----------------------- */
+
+
+/* Styling for unordered lists */
+ul {
+    text-align: left;
     color: #686960;
     font-family: Poppins, Helvetica, Arial, "san serif";
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-/* Styling for unordered lists */
-ul {
-    text-align: left;
-}
+
+/* --------------------- TABLE STYLES ----------------------- */
 
 
 
@@ -205,27 +266,23 @@ footer p {
 }
 
 
-
-.single_column_section h2 {
-    min-height: 400px;
-    max-height: 600px;
-    padding-top: 340px;
-    background-image: url("../multimedia/milky-way-near-Telluride.jpg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
 /* ---------------------- TABLET MEDIA QUERIES ------------------------- */
-/* These are media queries for screens of 640 pixels or less. */
+/* These are for media queries for screens between 641 pixels and 1024 pixels. */
 
 /* Resize h1 to be smaller and lighter in weight than desktop. */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    /* ----------------------- NAV BAR FOR TABLET -------------------------- */
+
+    /* Make navigation text smaller to account for smaller device size. */
+    .nav_links {
+        font-size: .9rem;
+    }
+    
     /* Resize h1 to be smaller and lighter in weight than desktop. */
     h1 {
-      font-size: 2rem;
-      line-height: 2rem;
+      font-size: 2.2rem;
+      line-height: 2.4rem;
       font-weight:500;
     }
 
@@ -244,7 +301,6 @@ footer p {
     /* Resize p to be left aligned and smaller than desktop. */
     p {
         font-size:0.95rem;
-        text-align: left;
     }
 
     /* Style the print cards so that there are less cards on each row on tablet. */
@@ -255,21 +311,48 @@ footer p {
 
 
 /* ---------------------- MOBILE MEDIA QUERIES ------------------------- */
-/* These are for media queries for screens between 641 pixels and 1024 pixels. */
+/* These are media queries for screens of 640 pixels or less. */
 
 
 @media screen and (max-width: 640px) {
-    /* Resize h1 to be smaller and lighter in weight than desktop. */
+
+    /* ----------------------- NAV BAR FOR MOBILE -------------------------- */
+
+    /* Make sure the logo doesn't float left on mobile and instead displays as a block level element. */
+    .logo_image {
+        float: none;
+        display: block;
+    }
+    
+    /* Make navigation text smaller, underlined, left aligned, and with nav links each block level for a stacked look. */
+    .nav_links {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: .85rem;
+        padding: 0.9rem 0rem 0rem 0rem;
+        margin-left: 1.5rem;
+        text-decoration: underline;
+        text-decoration-thickness: 0.2rem;
+    }
+    
+    /* Resize h1 to be smaller, left-aligned, and lighter in weight than desktop. */
     h1 {
-      font-size: 2.5rem;
-      line-height: 2.6rem;
-      font-weight:500;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        font-weight:500;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     /* Resize h2 to be smaller (with modified line height than desktop. */
     h2 {
         font-size: 1.3rem;
         line-height: 1.4rem;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     /* Resize h3 to be smaller (with modified line height than desktop. */
@@ -279,10 +362,14 @@ footer p {
     }
 
     /* Resize p to be left aligned and smaller than desktop. */
-    p {
+    p, .single_column_section p {
         font-size:0.9rem;
         text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 80%;
     }
+
 
     /* Style the print cards so that there are less cards on each row on tablet. */
     .print_card {

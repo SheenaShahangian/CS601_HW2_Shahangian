@@ -40,9 +40,8 @@
 
         <!-- this section introduces Sheena and what the intent of this website is -->
         <section class="single_column_section">
-            <h1>A Life Well Documentedasdfsdfasdfasdfsdfsdfasdfsdfasdfasdfasdfsadfasdfsadfsdfsadfasdfsadfsdfsdfasdfsadfsdfdsf</h1>
-            <img src="multimedia/hompage-hero-image.jpg" alt="Sheena with her husband and dog in the mountains"
-                class="hero_image">
+            <h1>A Life Well Documented</h1>
+
             <p>
                 I believe in living a life that is well documented. As a professional photographer,
                 everything I do is about capturing moments. For my everyday work, this means documenting
@@ -52,6 +51,9 @@
                 or the window of the coffee shop I frequent in the mornings. It also means writing about
                 those experiences too.
             </p>
+
+            <img src="multimedia/hompage-hero-image.jpg" alt="Sheena with her husband and dog in the mountains"
+                class="hero_image">
 
             <!-- aside used to eventually display content I want spotlit and styled to stand out -->
             <aside class="pullquote">
@@ -72,7 +74,7 @@
 
 
         <!-- this section give the user two routes to take on the site -->
-        <section class="two_card_display">
+        <section class="single_column_section">
             <h2>Let's Go on a Journey</h2>
             <p>
                 What would you like to know? Interested in learning more about me and my background?
@@ -81,43 +83,49 @@
                 where you can see some of <em>my</em> personal favorites.
             </p>
 
-            <!-- card that will navigate you to the biography page -->
-            <article class="info_card">
+            <!-- two column display -->
+            <div class="flex_container">
+                <!-- card that will navigate you to the biography page -->
+                <article class="info_card">
 
-                <h3>Hey. Hi. Hello. It's Sheena.</h3>
-                <img src="multimedia/about-card-photo.jpg" alt="woman sitting in front of a waterfall">
+                    <img src="multimedia/about-card-photo.jpg" alt="woman sitting in front of a waterfall">
 
-                <!-- introductory content hinting at what you will find on the bio/about page -->
-                <p>
-                    I like to joke that there's pretty much <em>nothing</em> normal about me. I'm both
-                    creative and analytical. I'm introverted, yet also love getting to know people. I'm
-                    an avid hiker and explorer, but I also consider myself a homebody. Curious to know
-                    more about this strange gal?
-                </p>
+                    <h3>Hey. Hi. Hello. It's Sheena.</h3>
 
-                <!-- button that goes to the biography page - to be click-able when we get to JavaScript week -->
-                <button type="button">Learn More About Me</button>
+                    <!-- introductory content hinting at what you will find on the bio/about page -->
+                    <p class="info_card_paragraph">
+                        I like to joke that there's pretty much <em>nothing</em> normal about me. I'm both
+                        creative and analytical. I'm introverted, yet also love getting to know people. I'm
+                        an avid hiker and explorer, but I also consider myself a homebody. Curious to know
+                        more about this strange gal?
+                    </p>
 
-            </article>
+                    <!-- button that goes to the biography page - to be click-able when we get to JavaScript week -->
+                    <button type="button" class="info_card_button">Learn More About Me</button>
 
-            <!-- card that will navigate you to the landscape shop page -->
-            <article class="info_card">
+                </article>
 
-                <h3>Shop My Landscape Prints</h3>
-                <img src="multimedia/shop-card-photo.jpg" alt="a desert canyon at sunset">
+                <!-- card that will navigate you to the landscape shop page -->
+                <article class="info_card">
 
-                <!-- introductory content hinting at what you will find on the shop page -->
-                <p>
-                    I'm a big believer that part of living a well-rounded life means living a life of exploration.
-                    When I have free time, I try as hard as I can to not be at home; to get out and experience
-                    new trails, new mountains, new beaches, and new cultures. I've turned my photos of these
-                    incredible places I've traveled to into landscape prints you can purchase. Ready to shop?
-                </p>
+                    <img src="multimedia/shop-card-photo.jpg" alt="a desert canyon at sunset">
 
-                <!-- button that goes to the shop page - to be click-able when we get to JavaScript week -->
-                <button type="button">View the Shop</button>
+                    <h3>Shop My Landscape Prints</h3>
 
-            </article>
+                    <!-- introductory content hinting at what you will find on the shop page -->
+                    <p class="info_card_paragraph">
+                        I'm a big believer that part of living a well-rounded life means living a life of exploration.
+                        When I have free time, I try as hard as I can to not be at home; to get out and experience
+                        new trails, new mountains, new beaches, and new cultures. I've turned my photos of these
+                        incredible places I've traveled to into landscape prints you can purchase. Ready to shop?
+                    </p>
+
+                    <!-- button that goes to the shop page - to be click-able when we get to JavaScript week -->
+                    <button type="button" class="info_card_button">View the Shop</button>
+
+                </article>
+
+            </div>
 
         </section>
 

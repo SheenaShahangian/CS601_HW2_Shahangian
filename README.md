@@ -12,7 +12,16 @@ The repository is public, however should you have any trouble accessing it, plea
 
 ## Requested Elements
 
+I have used media queries to make the following substantial changes, based on screen size:
 
+Before we begin, these are the screen sizes and names I'll be referring to in this report:
+
+* The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation links get smaller to acommodate the smaller screen size.  In the mobile version, the links are stacked on top of each other, rather than horizontal.
+* The h1, h2, and h3 elements have all been modified based on screen size. Specifically,.....
+* The paragraph font size has been modified, based on screen size as well. Specifically...
+* You'll notice, headings and paragraphs of text are left aligned on mobile, versus center aligned on tablet and desktop. This is due to the fact that smaller devices are more difficult to read on, and left aligned text is better for that screen size.
+* On the home page, the two article cards are represented by two columns on desktop and tablet, but are stacked one on top of the other for mobile. This is to keep the screen from being too cluttered.
+* For paragraphs of text on the mobile screen size, because they are left aligned and I didn't want to have any text pushing up against the browser window's boundaries, I have used media queries to add in a unique left and right margin. The same has been applied to h1 and h2.
 
 ### Incorporation of Other Additional Elements Presented During Class - How I Went Above and Beyond
 
