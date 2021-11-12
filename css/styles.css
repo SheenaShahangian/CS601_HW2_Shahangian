@@ -77,6 +77,11 @@ h2 {
     padding: 1rem;
 }
 
+/* Style the h2 in the same section as the aside to be left aligned */
+#h2_near_aside {
+    text-align: left;
+}
+
 /* Style of h3 */
 h3 {
     color: #5f2e21;
@@ -104,6 +109,13 @@ p {
     padding: 1rem;
 }
 
+/* Style the p in the same section as the aside to be left aligned */
+#p_near_aside {
+    text-align: left;
+    padding: 1rem;
+    margin: 2rem;
+}
+
 /* Styling for blockquote paragraphs */
 blockquote p {
     color: #e9dfd6;
@@ -127,8 +139,27 @@ blockquote {
     background-attachment: fixed; /* used to create dynamic look */
     background-position: 50% 50%;
     padding: 150px 0px;
-    margin:0 auto; /* ensures no white space on sides */
+    margin:1rem auto; /* ensures no white space on sides */
 }
+
+aside {
+    float: right; /* float to the righthand side */
+    width: 30%; /* only take up 30% of the container */
+    padding-left: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-top: 3rem;
+    margin-left: 0.8rem;
+    background-color: #ccb1a2;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
 
 
 /* --------------------- NON-HAV HYPERLINK + BUTTON STYLES ----------------------- */
@@ -189,7 +220,7 @@ ul {
 
 /* Styles for table itself */
 table {
-    width: 80%; /* retain consistent width with p */
+    width: 100%;
     padding: 1rem; /* retain consistent padding with p */
     margin: 0 auto; /* center table */
 }
@@ -231,6 +262,8 @@ tr.odd {
 /* Styling for hero/banner images */
 .hero_image {
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Style of the iframes used to display videos */
@@ -265,6 +298,7 @@ figcaption {
 
 /* Style of sections that are intended to take up a single column */
 .single_column_section {
+    width: 100%;
     margin: auto;
     padding-bottom: 2rem;
     text-align: center;
@@ -292,11 +326,6 @@ figcaption {
     flex-direction: column;
     flex: 1;
     max-width: 50%;
-}
-
-.aside_columns {
-    display: flex;
-    flex-direction: row;
 }
 
 
