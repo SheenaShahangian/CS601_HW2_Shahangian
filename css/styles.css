@@ -57,7 +57,7 @@ h1 {
     line-height: 3.5rem;
     text-transform: uppercase;
     text-align: center;
-    margin: 3rem 2rem 1rem 2rem;
+    margin: 3rem 2rem 0.5rem 2rem;
     padding: 1rem;
 }
 
@@ -70,7 +70,7 @@ h2 {
     line-height: 2.4rem;
     text-transform: capitalize;
     text-align: center;
-    margin: 1rem 2rem;
+    margin: 0rem 2rem;
     padding: 1rem;
 }
 
@@ -101,23 +101,31 @@ p {
     padding: 1rem;
 }
 
-/* Style of paragraphs of text in the info cards. */
-.info_card_paragraph {
-    padding-left: 3rem;
-    padding-right: 3rem;
+/* Styling for blockquote paragraphs */
+blockquote p {
+    color: #e9dfd6;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif";
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0 auto;
+    width: 50%;
 }
 
+
 /* --------------------- BLOCKQUOTE + ASIDE STYLES ------------------------ */
-.pullquote {
-    color:#ffffff;
-    background-color: #f17f6a;
-    float: right;
-    text-align: right;
-    min-width: 200px;
-    max-width: 30%;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    padding-left: 2rem;
+
+/* Styling for the blockquote elements */
+blockquote {
+    background-image: url("../multimedia/independence-pass.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 150px 0px;
+    margin:0 auto;
 }
 
 /* --------------------- SECTION STYLES ----------------------- */
@@ -144,7 +152,7 @@ p {
     width: 100%;
 }
 
-/* Style for single column in the two column layout. */
+/* Style for a single column in the two column layout. */
 .flex_container .info_card {
     display: flex;
     flex-direction: column;
@@ -152,9 +160,25 @@ p {
     max-width: 50%;
 }
 
+.aside_columns {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.aside_columns blockquote {
+    background-image: url("../multimedia/milky-way-near-Telluride.jpg");
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
 
 
 /* --------------------- IMAGE STYLES + IFRAME ----------------------- */
+
 
 /* Styling for hero/banner images */
 .hero_image {
@@ -220,9 +244,11 @@ ul {
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.7rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin: auto;
+    width: 80%;
 }
+
+
 
 
 /* --------------------- TABLE STYLES ----------------------- */
@@ -232,15 +258,15 @@ ul {
 /* ---------------------- CARD STYLES ------------------------ */
 
 
-/* Style of the print cards themselves */
-.print_card {
+/* Style of the image gallery cards themselves */
+.image_gallery_card {
     display: inline-block;
     width: 22%;
     padding: 15px;
 }
 
-/* Style the images in the print cards */
-.print_card img {
+/* Style the images in the image gallery cards */
+.image_gallery_card img {
     width: 100%;
 }
 
@@ -255,7 +281,7 @@ ul {
 
 /* Design of the footer */
 footer {
-    background-color: #dfddd5;
+    background-color: #e9dfd6;
 }
 
 /* Design of paragraphs of text in the footer */
@@ -278,6 +304,8 @@ footer p {
     .nav_links {
         font-size: .9rem;
     }
+
+    /* ----------------------- HEADINGS FOR TABLET -------------------------- */
     
     /* Resize h1 to be smaller and lighter in weight than desktop. */
     h1 {
@@ -298,13 +326,26 @@ footer p {
         line-height: 1.4rem;
     }
 
-    /* Resize p to be left aligned and smaller than desktop. */
+
+    /* ----------------------- PARAGRAPHS FOR TABLET -------------------------- */
+
+    /* Resize p to be smaller than desktop. */
     p {
         font-size:0.95rem;
     }
 
-    /* Style the print cards so that there are less cards on each row on tablet. */
-    .print_card {
+    /* ----------------------- LIST STYLES FOR TABLET -------------------------- */
+
+    /* Resize text in the ul to be smaller than on desktop */
+    ul {
+        font-size:0.95rem;
+    }
+
+
+    /* ----------------------- LANDSCAPE PRINT CARD FOR TABLET -------------------------- */
+
+    /* Style the image gallery cards so that there are less cards on each row on tablet. */
+    .image_gallery_card {
         width: 40%;
     }
 }
@@ -336,6 +377,9 @@ footer p {
         text-decoration-thickness: 0.2rem;
     }
     
+
+    /* ----------------------- HEADINGS FOR MOBILE -------------------------- */
+
     /* Resize h1 to be smaller, left-aligned, and lighter in weight than desktop. */
     h1 {
         font-size: 1.8rem;
@@ -361,6 +405,9 @@ footer p {
         line-height: 1.2rem;
     }
 
+
+    /* ----------------------- PARAGRAPHS FOR MOBILE -------------------------- */
+
     /* Resize p to be left aligned and smaller than desktop. */
     p, .single_column_section p {
         font-size:0.9rem;
@@ -370,10 +417,33 @@ footer p {
         width: 80%;
     }
 
+    /* ----------------------- LIST STYLES FOR MOBILE -------------------------- */
 
-    /* Style the print cards so that there are less cards on each row on tablet. */
-    .print_card {
+    /* Resize text in the ul to be smaller than on desktop */
+    ul {
+        font-size:0.9rem;
+    }
+
+
+    /* ----------------------- LANDSCAPE PRINT CARD FOR MOBILE -------------------------- */
+
+
+    /* Style the image gallery cards so that there are less cards on each row on tablet. */
+    .image_gallery_card {
         width: 80%;
+    }
+
+
+    /* ----------------------- CONVERT TWO COLUMN LAYOUT TO ONE COLUMN -------------------------- */
+
+    /* On mobile, the two column layout should stack and be one column instead. */
+    .flex_container {
+        display: block;
+    }
+
+    /* Style so that each column takes up the full width of the window instead of half. */
+    .flex_container .info_card {
+        max-width: 100%;
     }
 }
 
