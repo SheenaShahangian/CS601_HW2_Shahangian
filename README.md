@@ -23,6 +23,7 @@ Before we begin, these are the screen sizes and names I'll be referring to in th
 * On the home page, the two article cards are represented by two columns on desktop and tablet, but are stacked one on top of the other for mobile. This is to keep the screen from being too cluttered.
 * For paragraphs of text on the mobile screen size, because they are left aligned and I didn't want to have any text pushing up against the browser window's boundaries, I have used media queries to add in a unique left and right margin. The same has been applied to h1 and h2.
 * Media queries have been used on the shop page to ensure the number of landscape prints in a row scales down depending on screen size.
+* On mobile, I hid the publication location on the table in the biography page to avoid clutter. This was non-essential information that was a good fit for hiding.
 
 ### Incorporation of Other Additional Elements Presented During Class - How I Went Above and Beyond
 
