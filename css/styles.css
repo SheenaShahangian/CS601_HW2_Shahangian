@@ -160,7 +160,7 @@ blockquote {
 /* Styling for an aside */
 aside {
     float: right; /* float to the righthand side */
-    width: 30%; /* only take up 30% of the container */
+    width: 40%; /* only take up 40% of the container */
     padding-left: 0.8rem;
     padding-bottom: 0.8rem;
     margin-top: 3rem;
