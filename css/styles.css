@@ -345,19 +345,22 @@ figcaption {
 /* Using flexbox to create two column layout */
 .flex_container {
     display: flex;
-    flex-direction: row; /* contents lined up in a row vs a column */
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* even spacing of contents */
-    width: 100%;
+    justify-content: center; /* center the content */
+    margin: 0 auto;
 }
 
 
 /* Style for a single column in the two column layout. */
-.flex_container .info_card {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    max-width: 50%; /* allows for two column layout */
+.info_card {
+    width: 50%;
+}
+
+
+/* Style for the image on each card */
+.card_image {
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
 }
 
 
@@ -636,7 +639,7 @@ footer a {
 
     /* Style so that each column takes up the full width of the window instead of half. */
     .flex_container .info_card {
-        max-width: 100%;
+        width: 100%;
     }
 
 
