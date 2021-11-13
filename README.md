@@ -26,13 +26,17 @@ In order to incorporate feedback from last week, I have changed all external lin
 ## Requested Elements
 
 1. Per the assignment instructions, all pages are styled using the same single external stylesheet. As it is quite long, I have used comments to organize the code. Media styles for tablet screen sizes and mobile screen sizes are located at the bottom of the stylesheet.
+
 2. Each element has at least one property value pair (and most of them have a lot more than just one, given I was aiming to create a professional design).
+
 3. In regards to creativity, I have attempted to treat this as a professional website, with clean branding, good amounts of whitespace, consistent brand palette/color usage, and the like.
-4. There are well more than the three required distinct differences in how the pages are presented based on screen size. Per the professor's recommendation, the branding and colors remain consistent, no matter the screen size. This is to ensure that the viewer doesn't get confused about which site they are on: it's best practice for the branding to stay the same. Where I have incorporated changes is in doing things like modifying the navigation bar for mobile, changing font size depending on screen size, hiding elements on smaller screens for a more streamlined view, changing text alignment on smaller screens to make reading easier, etc. I go into full detail on how media queries were used to accomplish this below:
 
-I have used media queries to make the following substantial changes, based on screen size:
+4. There are well more than the three required distinct differences in how the pages are presented based on screen size. Per the professor's recommendation, the branding and colors remain consistent, no matter the screen size. This is to ensure that the viewer doesn't get confused about which site they are on: it's best practice for the branding to stay the same. Where I have incorporated changes is in doing things like modifying the navigation bar for mobile, changing font size depending on screen size, hiding elements on smaller screens for a more streamlined view, changing text alignment on smaller screens to make reading easier, etc. I go into full detail on how media queries were used to accomplish this below. Before we begin, these are the screen sizes and names I'll be referring to in this report:
+   1. Anything referred to as **tablet** is a screen size of: *minimum 641 pixels and maximum 1024 pixels*.
+   2. Anything referred to as **mobile** is a screen size of: *maximum 640 pixels*.
+   3. Anything referred to as **desktop** is the default and is *1025 pixels or more*.
 
-Before we begin, these are the screen sizes and names I'll be referring to in this report:
+   I have used media queries to make the following substantial changes using media queries, based on the aforementioned screen sizes:
 
 * The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation links get smaller to accommodate the smaller screen size.  In the mobile version, the links are stacked on top of each other, rather than horizontal.
 * The h1, h2, and h3 elements have all been modified based on screen size. Specifically,.....
@@ -51,9 +55,11 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * I have used a variety of selectors, including class selectors, element/type selectors, id selectors, and descendant selectors. As much as possible, I have aimed to focus on element/type and class selectors to ensure greater reusability on the code.
 
-* I have included more than one property:value pair on nearly every selector I've used to make sure I fine-tuned my design.
+* I have intentionally chosen colors that are easily legible on various colors and surfaces on the website, so that nothing is difficult to read.
 
-* I have organized my css document with thorough comments to ensure the design choices are clear and easy to find (which will make this website easier to modify in the future). I have also used comments to break up my stylesheet into sections that make it more digestible. This will make it easier to modify the css in the future.
+* I have included more than one property:value pair on nearly every selector I've used to make sure I fine-tuned my design. Furthermore, I have styled the page in such a way that this new version looks nothing like the HTML version of the website yesterday. Specifically, all fonts are changed, colors are added, layout is modified, the pages are responsive, padding is modified, margins are modified, line height and letter pacings are modified, etc. I won't make a comprehensive list here, as it'd be quite long, but these are some of the changes have been made.
+
+* I have organized my css document with in-depth comments to ensure the design choices are clear and easy to find (which will make this website easier to modify in the future, when needed). I have also used comments to break up my stylesheet into sections that make it more digestible. This will make it easier to modify the css in the future.
 
 * Per the professor's recommendations, I have placed all media queries at the bottom of the stylesheet for easy identification.
 
