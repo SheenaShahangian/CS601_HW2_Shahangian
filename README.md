@@ -77,4 +77,8 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * Per the professor's encouragement to look into newer tools like Flexbox, I have incorporated Flexbox for some of my two column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in).
 
+* Per the professor's recommendations, I have tried to use rems and percentages as much as possible, and have used pixels as little as possible.
+
+* I do want to acknowledge that I have incorporated divs, but I have only done this when absolutely necessary and when a semantic element wouldn't work and would produce a warning from the validator.
+
   
