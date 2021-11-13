@@ -20,7 +20,7 @@ In order to incorporate feedback from last week, I have changed all external lin
 ## A Couple Notes Before We Begin
 
 * In last week's version of the website, I specified image and iframe dimensions in the HTML. Now that we have learned CSS and per the textbook's instructions to not have dimensions specified in both files, I am using CSS to style the images. This works particularly well as for all images, with the exception of the logo and the height of the video iframe, I have set image sizes to be relative. For example, I have used percentages to indicate how much space an image should take up, which allows my site to be more responsive and friendly to different devices. In some cases, media queries are actually used to modify these percentages, based on screen size as well.
-* This website was deigned in such a way that the brand and design is consistent, no matter the screen size, while also making sure that the design adapts based on the screen size the user is viewing the site on. I was inspired by real websites, where you have to ensure the website still looks like it belongs to the same company, even when its viewed on a different devices. For this reason, my changes based on device size center on things like modifying the navigation bar, adapting the number of columns based on device type, changing typeface size on headings and paragraphs according to device size, hiding elements when on very small screens, etc.
+* This website was designed in such a way that the brand and design is consistent, no matter the screen size, while also making sure that the design adapts based on the screen size the user is viewing the site on. I was inspired by real websites, where you have to ensure the website still looks like it belongs to the same company, even when its viewed on different devices. For this reason, my changes based on device size center on things like modifying the navigation bar, adapting the number of columns based on device type, changing typeface size on headings and paragraphs according to device size, hiding elements when on very small screens, etc.
 * For the embedded YouTube videos, I have opted for a very wide display on large screens, as these videos are shot in a cinematic way and the wide screen quality really complements that. As you move down to tablet and mobile, it takes more of a square-like dimension.
 
 ## Requested Elements
@@ -34,7 +34,7 @@ I have used media queries to make the following substantial changes, based on sc
 
 Before we begin, these are the screen sizes and names I'll be referring to in this report:
 
-* The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation links get smaller to acommodate the smaller screen size.  In the mobile version, the links are stacked on top of each other, rather than horizontal.
+* The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation links get smaller to accommodate the smaller screen size.  In the mobile version, the links are stacked on top of each other, rather than horizontal.
 * The h1, h2, and h3 elements have all been modified based on screen size. Specifically,.....
 * The paragraph font size has been modified, based on screen size as well. Specifically...
 * You'll notice, headings and paragraphs of text are left aligned on mobile, versus center aligned on tablet and desktop. This is due to the fact that smaller devices are more difficult to read on, and left aligned text is better for that screen size.
@@ -49,7 +49,7 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * I have used Google Fonts rather than system fonts to give my website an elevated and customized look. However, I have also specified fallback fonts as well, in case my website visitors' devices cannot render the Google Fonts.
 
-* I have used a variety of selectors, including class selectors, element/type selectors, id selectors, and descedant selectors. As much as possible, I have aimed to focus on element/type and class selectors to ensure greater resuability on the code.
+* I have used a variety of selectors, including class selectors, element/type selectors, id selectors, and descendant selectors. As much as possible, I have aimed to focus on element/type and class selectors to ensure greater reusability on the code.
 
 * I have included more than one property:value pair on nearly every selector I've used to make sure I fine-tuned my design.
 
@@ -57,7 +57,7 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * Per the professor's recommendations, I have placed all media queries at the bottom of the stylesheet for easy identification.
 
-* I have incorporated well more than the three required distinct differences based on screen size, as I wanted each device size to really be comprehensive and beautiful on its own. Specifically, I have used media queries on 15 different elements on screens with a max width of 640 pixels, and I have used media queries on 7 different elements on screens with a min width of 641 pixels and a max width of 1024 pixels. Generally speaking, the 641 - 1024 pixel screens have more real estate and thus incorporate a lot of the same structure and design as larger screens, which is why they have less elements leveraging media queries. On the other end of the spectrum, smaller screen sizes require much resizing and redesigning.
+* I have incorporated several more than the three required distinct differences based on screen size, as I wanted each device size to really be comprehensive and beautiful on its own. Specifically, I have used media queries on 15 different elements on screens with a max width of 640 pixels, and I have used media queries on 7 different elements on screens with a min width of 641 pixels and a max width of 1024 pixels. Generally speaking, the 641 - 1024 pixel screens have more real estate and thus incorporate a lot of the same structure and design as larger screens, which is why they have less elements leveraging media queries. On the other end of the spectrum, smaller screen sizes require much resizing and redesigning.
 
 * I have chosen and used a color palette that I have based my styles on to ensure consistency in branding.
 
