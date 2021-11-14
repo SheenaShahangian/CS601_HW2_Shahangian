@@ -299,7 +299,7 @@ tr.odd {
 iframe {
     border: none;
     height: 315px; /* height recommended by YouTube */
-    width: 100%;
+    width: 60%;
 }
 
 
@@ -361,6 +361,24 @@ figcaption {
     width: 100%;
     margin-bottom: 15px;
     background-size: cover;
+}
+
+
+/* Left align the h3 and paragraphs on the info cards */
+article.info_card>h3, article.info_card>p {
+    text-align: left;
+}
+
+
+/* Styling to set left margin of paragraphs on info cards */
+article.info_card>p {
+    margin-left: 1rem;
+}
+
+
+/* Styling to set left margin of h3 on info cards */
+article.info_card>h3 {
+    margin-left: 1rem;
 }
 
 
@@ -498,6 +516,15 @@ footer a {
     /* The publication date in the table should be hidden on tablet */
     .pub_date {
         display: none;
+    }
+
+
+
+    /* ------------------------ IFRAME STYLES FOR TABLET -------------------------- */
+
+    /* iframe width should be 100% for tablet, rather than the 60% used on desktop */
+    iframe {
+        width: 100%;
     }
 }
 
@@ -661,6 +688,15 @@ footer a {
     /* The publication's location in the table should be hidden on mobile */
     .pub_locale {
         display: none;
+    }
+
+
+
+    /* ------------------------ IFRAME STYLES FOR MOBILE -------------------------- */
+
+    /* iframe width should be 100% for mobile, rather than the 60% used on desktop */
+    iframe {
+        width: 100%;
     }
 }
 
